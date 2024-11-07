@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start Jupyter Lab in the background with specified base URL and no token for easy access
-jupyter lab --allow-root --NotebookApp.token='' &
+jupyter lab --allow-root --NotebookApp.base_url=/${RUNAI_PROJECT}/${RUNAI_JOB_NAME} --NotebookApp.token='' &
 # Wait for Jupyter Lab to start
 sleep 5
 
